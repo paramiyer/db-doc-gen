@@ -92,16 +92,29 @@ Make sure the DB is running and accessible at `localhost:5432`.
 Edit the `user_config.py` file with your connection details:
 
 ```python
-DB_CONFIG = {
-    "user": "your_user",
-    "password": "your_password",
-    "host": "localhost",
-    "port": "5432",
-    "database": "chinook"
-}
+db_uri: "postgresql://parameshwaraniyer@localhost:5432/chinook"
+schema: "public"
 
-DBDOCS_PROJECT = "my_project_name"
-DBDOCS_EMAIL = "your_email@domain.com"
+user_prompt:  |
+  You are a data documentation assistant.
+
+  The database is designed for a {industry} and supports {domain}.
+  Its purpose is to manage digital track sales, track customer purchases, oversee employee sales teams, and store metadata about artists, albums, and genres.
+
+  In this database, for the table {table}, generate a short documentation string for the column {col}.
+
+  Guidelines:
+  - If the column name ends in "Id" or "ID" use "ID for <entity name derived from column name, in lowercase>"
+  - For other columns, write short, noun-style labels like "Track name", "Creation date", "Total amount"
+  - Avoid full sentences — do not start with "The column..." or "This field..."
+  - Do not use special characters: apostrophes ('), commas (,), colons (:), semicolons (;)
+  - Return only the documentation string (no quotes or formatting)
+
+output_filename: "chinhook.dbml"
+dotenv_path: ".env"
+industry: 'digital media store'
+domain: 'customer relationship management, sales tracking, and catalog navigation'
+openai_model: "gpt-3.5-turbo"
 ```
 
 Also ensure your OpenAI API key is set in the environment:
