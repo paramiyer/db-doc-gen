@@ -133,7 +133,7 @@ Launch the Jupyter notebook and execute:
 jupyter notebook
 ```
 
-Open `generate_db_docs.ipynb` and run all cells.
+Open `db-doc-cols.ipynb` and run all cells.
 
 - This will:
   - Connect to your DB
