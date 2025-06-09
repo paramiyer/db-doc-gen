@@ -10,6 +10,7 @@ This tool automates the process of documenting relational databases by extractin
 - Extracts full schema metadata using Python (tables, columns, keys, indexes)
 - Generates intelligent column descriptions using GPT
 - Outputs DBML file ready to publish on `dbdocs.io`
+- Publishes DBML file once the dbdocs session is active
 - Tested with PostgreSQL + Chinook sample DB
 - Works with most relational databases (PostgreSQL, MySQL, SQLite, etc.)
 
@@ -145,13 +146,6 @@ Your docs will be available at:
 ```
 https://dbdocs.io/your_username/my_project_name
 ```
-
----
-
-## 💬 Questions or Collaboration?
-
-- DM me on [LinkedIn](https://www.linkedin.com/in/your-profile/)
-- Open an issue or fork the repo!
 
 ---
 
