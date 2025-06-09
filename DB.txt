@@ -1,0 +1,8 @@
+The database is for {industry} and {domain}.
+Its purpose - 
+	digital tracks (songs) sales
+	Tracks customer purchases
+	Manages employee sales teams
+	Stores metadata about artists, albums, and genres.
+
+In this database for {table} generate a short documentation for the column {col}

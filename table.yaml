@@ -1,0 +1,11 @@
+Artist: Stores names of music artists (e.g., The Beatles, Miles Davis)
+Album: Albums created by artists. Each album is tied to a specific artist
+Track: Individual songs. Contains metadata like genre, media type, and duration
+Genre: High-level classification of tracks (e.g., Rock, Jazz)
+MediaType: Format in which the track is available (e.g., MPEG audio, AAC)
+Customer: Represents users who purchase music — includes contact info and country
+Invoice: Represents a transaction — one invoice per purchase
+InvoiceLine: Line items of each invoice (i.e., which tracks were bought)
+Employee: Employees of the store (e.g., sales reps, support) with reporting hierarchy
+Playlist: User-created playlists (e.g., “Workout Mix”)
+PlaylistTrack: Junction table to link tracks to playlists
